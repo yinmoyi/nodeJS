@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EJS</title>
+  </head>
+
+  <body>
+    <h1>欢迎来到<%= websiteName %>的世界！</h1>
+    <h2>个人介绍：</h2>
+    <ul>
+      <% data.forEach(function(item){ %>
+      <li>
+        <p><%= item.name %></p>
+        <p><%= item.age %></p>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
